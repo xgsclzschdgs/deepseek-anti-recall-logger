@@ -1,0 +1,17 @@
+# 构建产物
+android/app/assets/ds_logger.js
+android/app/assets/ds_netcap.js
+*.apk
+out/
+
+# 签名与密钥（绝不提交）
+*.keystore
+*.jks
+*.p12
+*.pem
+
+# 依赖与系统文件
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
