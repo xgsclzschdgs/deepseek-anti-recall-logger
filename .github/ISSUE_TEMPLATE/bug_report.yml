@@ -1,0 +1,74 @@
+name: Bug 反馈
+description: 报告一个问题，帮助定位与修复
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量填写完整——尤其是**版本号**和**运行环境**，这两项能大幅缩短定位时间。
+        提交前请先搜索已有 Issue，避免重复。
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本号
+      description: 脚本面板右上角显示的版本，或 APK 应用信息里的版本
+      placeholder: "例如 v1.6.3 / versionCode 7"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 使用方式
+      options:
+        - 油猴脚本（Tampermonkey）
+        - 书签脚本
+        - 安卓 APK
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: 浏览器 / 安卓环境
+      description: 浏览器名称与版本；或手机型号 + Android 版本
+      placeholder: "例如 Chrome 141 / Windows 11；或 小米 15 / Android 15"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 按顺序写清楚做了什么
+      placeholder: |
+        1. 打开 https://chat.deepseek.com/
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 可附截图；请注意给聊天内容等隐私信息打码
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他信息（可选）
+      description: 控制台报错、是否由旧版本覆盖升级、是否清空过留痕等
+    validations:
+      required: false
