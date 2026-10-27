@@ -28,9 +28,13 @@
 
 打开 `bookmarklet/deepseek-text-logger.html`，按页面提示把链接拖到浏览器书签栏，在 DeepSeek 页面点击该书签即可注入。
 
-### 方式三：安卓 APK
+### 方式三：安卓 APK（直接安装）
 
-仓库不提供预编译 APK（签名密钥不会公开）。请按下方「构建安卓 App」自行编译安装。
+下载 [DeepSeek_Text_Logger_v1.6.3.apk](dist/DeepSeek_Text_Logger_v1.6.3.apk)（versionCode 7 / versionName 1.6.3），传到手机安装即可。
+
+SHA-256：`8D1E21F028456A74B0F8B4C867422425FEE7CD5A14F5987EC5FA2A64F1ABBC4B`
+
+> 升级安装需使用同一签名密钥。签名密钥不随仓库发布；如需自行编译，见下方「构建安卓 App」（用你自己的密钥构建，无法覆盖安装本包）。
 
 ## 使用
 

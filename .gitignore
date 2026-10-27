@@ -2,6 +2,7 @@
 android/app/assets/ds_logger.js
 android/app/assets/ds_netcap.js
 *.apk
+!dist/*.apk
 out/
 
 # 签名与密钥（绝不提交）
